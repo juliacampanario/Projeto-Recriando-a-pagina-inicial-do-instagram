@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color:rgb(247, 247, 247);
+    background-image: url('Only_Pets-removebg-preview.png');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.instapets-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+
+}
+
+.instapets-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+}
+.instapets-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column ;
+    background-color: rgb(252, 246, 215);
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.group:nth-child(1) {
+    min-height: 18rem;
+    
+}
+
+.instapets-logo 
+{
+    height: 4rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.instapet-login {
+    background-color: darkgray;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+.instapet-logout {
+
+    margin-top: 1rem;
+    color: rgb(92, 90, 90);
+    
+}
+
+.not-account {
+    color: rgb(80, 79, 79);
+}
+
+.link-blue {
+    color: rgb(223, 0, 0);
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    
+}
+
+.app-download:nth-child(1) {
+    background-image: url('disponivel-na-app-store-botao-1.png')
+}
+
+.app-download:nth-child(2) {
+    background-image: url('disponivel-google-play-badge.png');
+
+}
+.get-app {
+    border: 1px solid rgb(189, 189, 189);
+    background-color: rgb(252, 246, 215);
+    padding: 0.5rem;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .instapets-wrapper {
+    width: 90%;
+    }
+}
+@media (max-width: 650px) {
+
+    .body {
+        background-color: white;
+    }
+    .instapets-wrapper {
+    width: 90%;
+}
+.instapets-phone {
+    display: none;
+}
+.instapets-continue {
+    width: 100%;
+}
+.group {
+    border: 1px solid transparent;
+}
+}
